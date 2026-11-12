@@ -10,4 +10,4 @@
 # 3. Replace 'pub-0000000000000000' below with your actual Publisher ID.
 # ==============================================================================
 
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-6225511243835633, DIRECT, f08c47fec0942fa0
