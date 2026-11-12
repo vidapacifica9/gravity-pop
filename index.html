@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gravity Pop! — 360° Physics Merge Arcade Game</title>
+  <meta name="description" content="Drop, orbit, bounce & merge cute fruits, celestial planets & French pastries in a dynamic 360° gravity arena for iOS & Android!" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #0b0416; color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .cosmic-radial {
+      background: radial-gradient(circle at 50% 15%, rgba(236, 72, 153, 0.18) 0%, rgba(99, 102, 241, 0.12) 35%, rgba(11, 4, 22, 0) 70%);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-pink-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-white/10 bg-[#110522]/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="icon.png" alt="Gravity Pop App Icon" class="w-10 h-10 rounded-2xl shadow-lg ring-1 ring-white/20" />
+        <span class="font-black text-xl tracking-tight text-white">GRAVITY <span class="bg-gradient-to-r from-amber-300 via-pink-400 to-sky-400 bg-clip-text text-transparent">POP!</span></span>
+      </div>
+      <nav class="flex items-center gap-6 text-sm font-semibold text-white/70">
+        <a href="#features" class="hover:text-white transition hidden sm:inline">Features</a>
+        <a href="#support" class="hover:text-white transition">Support</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy</a>
+        <a href="#download" class="px-4 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xs hover:opacity-90 active:scale-95 transition shadow-lg shadow-pink-500/20">
+          Get Game
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative cosmic-radial pt-16 pb-20 px-6 text-center overflow-hidden">
+    <div class="max-w-4xl mx-auto space-y-6">
+      
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-md text-xs font-black uppercase tracking-widest text-sky-300 shadow-inner">
+        <span>✨ 360° Orbital Arena • Pinball Bumpers • Boss Battles</span>
+      </div>
+
+      <!-- App Icon Showcase -->
+      <div class="flex justify-center my-6">
+        <div class="relative group">
+          <div class="absolute -inset-4 bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500 rounded-3xl opacity-50 blur-2xl group-hover:opacity-75 transition duration-500 animate-pulse"></div>
+          <img src="icon.png" alt="Gravity Pop Icon" class="relative w-36 h-36 md:w-44 md:h-44 rounded-[2.5rem] shadow-2xl ring-2 ring-white/30 transform group-hover:scale-105 transition duration-300" />
+        </div>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-none text-white drop-shadow-xl">
+        GRAVITY <span class="bg-gradient-to-r from-amber-300 via-pink-400 to-sky-400 bg-clip-text text-transparent">POP!</span>
+      </h1>
+      
+      <p class="text-lg md:text-2xl text-white/80 font-medium max-w-2xl mx-auto leading-snug">
+        The ultimate 360° physics merge arcade game. Drop, orbit, roll, and evolve pieces through 5 jaw-dropping worlds!
+      </p>
+
+      <!-- App Store & Google Play Download CTA -->
+      <div id="download" class="pt-4 flex flex-wrap items-center justify-center gap-4">
+        <div class="flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm backdrop-blur-md transition shadow-xl">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.64 1.35-.57.65-1.07 1.71-.94 2.73 1 .08 2.03-.49 2.66-1.23z"/></svg>
+          <div class="text-left">
+            <div class="text-[10px] text-white/60 font-semibold uppercase leading-none">Available on</div>
+            <div class="text-sm font-black leading-tight">Apple App Store</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm backdrop-blur-md transition shadow-xl">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.02 2.02 0 0 1-.61-1.464V3.278c0-.58.226-1.11.609-1.464zm11.605 11.605l2.45 2.45-12.756 7.37 10.306-9.82zm0-2.838L4.908.762l12.756 7.369-2.45 2.45zm1.42 1.419l3.528 2.04c1.037.6 1.037 1.579 0 2.18l-3.528 2.038-2.434-2.434 2.434-2.424z"/></svg>
+          <div class="text-left">
+            <div class="text-[10px] text-white/60 font-semibold uppercase leading-none">Get it on</div>
+            <div class="text-sm font-black leading-tight">Google Play</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">Why Players Love Gravity Pop!</h2>
+      <p class="text-white/60 text-sm mt-2">A fresh evolution of the viral physics merge genre.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card 1 -->
+      <div class="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md hover:border-pink-500/40 transition group">
+        <div class="w-12 h-12 rounded-2xl bg-indigo-500/20 border border-indigo-400/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+          🪐
+        </div>
+        <h3 class="text-lg font-black text-white mb-2">360° Orbital Arena</h3>
+        <p class="text-sm text-white/70 leading-relaxed">
+          Break out of flat boxes! Aim your dropper 360° around a swirling Black Hole gravity well that dynamically pulls planets inward into natural orbital stacks.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md hover:border-pink-500/40 transition group">
+        <div class="w-12 h-12 rounded-2xl bg-pink-500/20 border border-pink-400/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+          👾
+        </div>
+        <h3 class="text-lg font-black text-white mb-2">Epic Stage Bosses</h3>
+        <p class="text-sm text-white/70 leading-relaxed">
+          Every merge fires homing plasma bolts at the Void Mothership, Pastry Golem, and Oni Demon. Defeat bosses to trigger victory coin showers!
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md hover:border-pink-500/40 transition group">
+        <div class="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+          🧁
+        </div>
+        <h3 class="text-lg font-black text-white mb-2">5 Delicious Worlds</h3>
+        <p class="text-sm text-white/70 leading-relaxed">
+          Play across Kawaii Fruits, Cosmic Space, Neon 2048, Parisian Sweet Bakery, and Shadow Ninja—each featuring unique ambient backdrops and juicy 3D pastries.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md hover:border-pink-500/40 transition group">
+        <div class="w-12 h-12 rounded-2xl bg-teal-500/20 border border-teal-400/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+          📱
+        </div>
+        <h3 class="text-lg font-black text-white mb-2">Real Phone Gyro Tilt</h3>
+        <p class="text-sm text-white/70 leading-relaxed">
+          Tilt your phone to roll pieces across pinball bumpers, activate Zero-G pulses to float clutters, or use Laser Pop to vaporize blocking pieces.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Support & Contact Section -->
+  <section id="support" class="max-w-4xl mx-auto px-6 py-16">
+    <div class="p-8 md:p-12 rounded-3xl bg-gradient-to-b from-white/10 to-white/5 border border-white/15 backdrop-blur-md text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-xs font-bold text-sky-300 uppercase tracking-wider">
+        Player Support & Inquiries
+      </div>
+      <h2 class="text-3xl font-black text-white tracking-tight">Need Help or Have Feedback?</h2>
+      <p class="text-sm md:text-base text-white/70 max-w-xl mx-auto">
+        Have questions about gameplay, in-app purchases, or want to report a bug? We are here to help!
+      </p>
+      <div class="pt-4">
+        <a href="mailto:support@gravitypopgame.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white text-slate-950 font-black text-sm hover:bg-white/90 active:scale-95 transition shadow-lg">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Contact Support (support@gravitypopgame.com)
+        </a>
+      </div>
+      <p class="text-xs text-white/50 pt-2">Typical response time: within 24 to 48 hours.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-10 text-center text-xs text-white/50">
+    <div class="max-w-6xl mx-auto px-6 space-y-4">
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="#features" class="hover:text-white transition">Features</a>
+        <a href="#support" class="hover:text-white transition">Support</a>
+        <a href="privacy.html" class="hover:text-white transition text-pink-400">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+        <a href="app-ads.txt" class="hover:text-white transition">app-ads.txt</a>
+      </div>
+      <p class="text-white/40">© 2026 Gravity Pop! All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

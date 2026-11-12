@@ -1,0 +1,13 @@
+# ==============================================================================
+# app-ads.txt for Gravity Pop!
+# ==============================================================================
+# This file verifies your ownership of the ad inventory for Google AdMob & authorized buyers.
+# 
+# INSTRUCTIONS:
+# When you log in to your Google AdMob account (https://admob.google.com):
+# 1. Go to "Settings" -> "Account Information".
+# 2. Copy your "Publisher ID" (it starts with "pub-", e.g. pub-1234567890123456).
+# 3. Replace 'pub-0000000000000000' below with your actual Publisher ID.
+# ==============================================================================
+
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
